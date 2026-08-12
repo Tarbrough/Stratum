@@ -1,0 +1,34 @@
+Meta.DisplayName=Stratum
+Meta.Description=Vintage Story server using Stratum
+Meta.OS=Linux
+Meta.Arch=x86_64
+Meta.Author=Local
+Meta.URL=https://github.com/StratumServer/Stratum
+Meta.ConfigManifest=stratumconfig.json
+Meta.ConfigRoot=stratum.kvp
+Meta.MinAMPVersion=2.8.0.4
+Meta.ConfigVersion=1
+Meta.AppConfigId=3d106e42-c560-45d9-b6bc-ea11a3f8e4ff
+
+App.DisplayName=Stratum
+App.RootDir=./stratum/
+App.BaseDirectory=./stratum/
+
+App.ExecutableLinux=StratumServer
+App.WorkingDir=.
+
+App.CommandLineArgs=--port {{$ApplicationPort1}} --dataPath "{{$FullRootDir}}data"
+
+App.ExitMethod=OS_CLOSE
+App.ExitTimeout=30
+
+App.HasWriteableConsole=True
+App.HasReadableConsole=True
+
+App.ApplicationIPBinding=0.0.0.0
+App.ApplicationPort1=42420
+
+App.MaxUsers=20
+
+App.AdminMethod=STDIO
+App.ApplicationReadyMode=Immediate
