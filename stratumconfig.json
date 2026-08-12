@@ -5,7 +5,7 @@
     "Subcategory": "Server",
     "Description": "Vintage Story server listening port.",
     "Keywords": "port,vintagestory,stratum",
-    "FieldName": "$ApplicationPort1",
+    "FieldName": "$GamePort",
     "InputType": "number",
     "IsFlagArgument": false,
     "ParamFieldName": "port",

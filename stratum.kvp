@@ -28,7 +28,7 @@ App.WorkingDir=.
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
 
-App.CommandLineArgs=--port {{$ApplicationPort1}} --dataPath "{{$FullRootDir}}data"
+App.CommandLineArgs=--port {{$GamePort}} --dataPath "{{$FullRootDir}}data"
 
 App.AppSettings={}
 App.EnvironmentVariables={}
@@ -46,9 +46,8 @@ App.HasReadableConsole=True
 App.SupportsLiveSettingsChanges=False
 
 App.ApplicationIPBinding=0.0.0.0
-App.ApplicationPort1=42420
-App.ApplicationPort2=0
-App.ApplicationPort3=0
+App.Ports=@IncludeJson[stratumports.json]
+App.PrimaryApplicationPortRef=GamePort
 
 App.MaxUsers=20
 

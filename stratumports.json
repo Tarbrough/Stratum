@@ -1,0 +1,9 @@
+[
+  {
+    "Port": 42420,
+    "Name": "Game Port",
+    "Ref": "GamePort",
+    "Protocol": "TCP",
+    "Mandatory": true
+  }
+]
